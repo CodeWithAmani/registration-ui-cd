@@ -1,1 +1,1 @@
-# gitops-register-app
+# registration-ui-cd
