@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: registration-ui
+  name: registration-ui:1.0.0-13
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: registration-ui
+      app: registration-ui:1.0.0-13
   template:
     metadata:
       labels:
-        app: registration-ui
+        app: registration-ui:1.0.0-13
     spec:
       containers:
-        - name: registration-ui
-          image: abeldock/registration-ui:1.0.0-12
+        - name: registration-ui:1.0.0-13
+          image: abeldock/registration-ui:1.0.0-13
           resources:
             limits:
               memory: "256Mi"
